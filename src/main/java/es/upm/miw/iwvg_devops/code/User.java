@@ -53,6 +53,7 @@ public class User {
     }
 
     public void addFraction(Fraction fraction) {
+        this.fractions = new ArrayList<>(this.fractions);
         this.fractions.add(fraction);
     }
 
