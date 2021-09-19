@@ -7,7 +7,7 @@ Autor: Marina Sayols Martínez
 
 ### Estado del código
 [![DevOps](https://github.com/marinasayols/iwvg-devops-sayols-marina/actions/workflows/CI.yml/badge.svg)](https://github.com/marinasayols/iwvg-devops-sayols-marina/actions/workflows/CI.yml)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=marinasayols_iwvg-devops-sayols-marina&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=marinasayols_iwvg-devops-sayols-marina)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=marinasayols_iwvg-devops-sayols-marina&metric=alert_status)](https://sonarcloud.io/dashboard?id=marinasayols_iwvg-devops-sayols-marina)
 [![BCH compliance](https://bettercodehub.com/edge/badge/marinasayols/iwvg-devops-sayols-marina?branch=develop)](https://bettercodehub.com/)
 [![Heroku broken](https://iwvg-devops-sayols-marina.herokuapp.com/system/version-badge)](https://iwvg-devops-sayols-marina.herokuapp.com/swagger-ui.html)
 
