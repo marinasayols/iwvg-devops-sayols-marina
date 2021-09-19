@@ -51,10 +51,21 @@ public class FractionTest {
     void testIsProper() {
         assertFalse(fraction.isProper());
     }
+     @Test
+    void testIsProperTrue(){
+        fraction.setNumerator(0);
+        assertTrue(fraction.isProper());
+    }
 
     @Test
     void testIsImproper() {
         assertTrue(fraction.isImproper());
+    }
+
+    @Test
+    void testIsImproperFalse(){
+        fraction.setNumerator(0);
+        assertFalse(fraction.isImproper());
     }
 
     @Test
