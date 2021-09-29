@@ -17,6 +17,10 @@ public class Fraction {
         this(1, 1);
     }
 
+    public static int compare(Fraction f1, Fraction f2) {
+        return Double.compare(f1.decimal(), f2.decimal());
+    }
+
     public int getNumerator() {
         return numerator;
     }
@@ -72,16 +76,6 @@ public class Fraction {
 
     public boolean isNegative() {
         return this.decimal() < 0;
-    }
-
-    public static int compare(Fraction f1, Fraction f2) {
-        if (f1.decimal() < f2.decimal()){
-            return -1;
-        } else if(f1.decimal() == f2.decimal()) {
-            return 0;
-        } else {
-            return 1;
-        }
     }
 
     @Override
