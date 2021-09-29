@@ -45,33 +45,41 @@ public class Fraction {
         return !isProper();
     }
 
-    public boolean isEquivalent(Fraction f){
+    public boolean isEquivalent(Fraction f) {
         return this.decimal() == f.decimal();
     }
 
-    public Fraction add(Fraction f){
+    public Fraction add(Fraction f) {
         int n = (this.numerator * f.getDenominator()) +
                 (this.denominator * f.getNumerator());
         int d = this.denominator * f.getDenominator();
         return new Fraction(n, d);
     }
 
-    public Fraction multiply(Fraction f){
+    public Fraction multiply(Fraction f) {
         return new Fraction(
                 this.numerator * f.getNumerator(),
                 this.denominator * f.getDenominator()
         );
     }
 
-    public Fraction divide(Fraction f){
+    public Fraction divide(Fraction f) {
         return new Fraction(
                 this.numerator * f.getDenominator(),
                 this.denominator * f.getNumerator()
         );
     }
 
-    public boolean isNegative(){
+    public boolean isNegative() {
         return this.decimal() < 0;
+    }
+
+    public static int compare(Fraction f1, Fraction f2) {
+        int Y = f1.getNumerator() * f2.getDenominator() - f1.getDenominator() * f2.getNumerator();
+        if (Y == 0) {
+            return 0;
+        }
+        return (Y > 0) ? 1 : -1;
     }
 
     @Override
