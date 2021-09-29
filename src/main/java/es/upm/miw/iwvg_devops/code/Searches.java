@@ -10,4 +10,11 @@ public class Searches {
                 .filter(Fraction::isNegative)
                 .map(Fraction::decimal);
     }
+
+    public Fraction findHighestFraction(){
+        return new UsersDatabase().findAll()
+                .flatMap(user -> user.getFractions().stream())
+                .max(Fraction::compare)
+                .orElse(new Fraction());
+    }
 }
