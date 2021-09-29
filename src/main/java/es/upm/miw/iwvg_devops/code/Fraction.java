@@ -75,11 +75,13 @@ public class Fraction {
     }
 
     public static int compare(Fraction f1, Fraction f2) {
-        int Y = f1.getNumerator() * f2.getDenominator() - f1.getDenominator() * f2.getNumerator();
-        if (Y == 0) {
+        if (f1.decimal() < f2.decimal()){
+            return -1;
+        } else if(f1.decimal() == f2.decimal()) {
             return 0;
+        } else {
+            return 1;
         }
-        return (Y > 0) ? 1 : -1;
     }
 
     @Override
