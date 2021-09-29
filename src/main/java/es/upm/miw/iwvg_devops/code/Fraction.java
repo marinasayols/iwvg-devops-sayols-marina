@@ -70,6 +70,10 @@ public class Fraction {
         );
     }
 
+    public boolean isNegative(){
+        return this.decimal() < 0;
+    }
+
     @Override
     public String toString() {
         return "Fraction{" +
