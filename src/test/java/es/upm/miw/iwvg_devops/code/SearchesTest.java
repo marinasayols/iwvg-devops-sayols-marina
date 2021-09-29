@@ -16,4 +16,12 @@ class SearchesTest {
                         .collect(Collectors.toList())
         );
     }
+
+    @Test
+    void testFindHighestFraction() {
+        assertEquals(
+                new Fraction(1, 0),
+                new Searches().findHighestFraction()
+        );
+    }
 }
