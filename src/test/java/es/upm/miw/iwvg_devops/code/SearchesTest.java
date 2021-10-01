@@ -24,4 +24,13 @@ class SearchesTest {
                 new Searches().findHighestFraction()
         );
     }
+
+    @Test
+    void testFindUserFamilyNameByAllNegativeSignFractionDistinct() {
+        assertEquals(
+                List.of("Blanco", "López"),
+                new Searches().findUserFamilyNameByAllNegativeSignFractionDistinct()
+                        .collect(Collectors.toList())
+        );
+    }
 }

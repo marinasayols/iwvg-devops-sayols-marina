@@ -51,8 +51,9 @@ class FractionTest {
     void testIsProper() {
         assertFalse(fraction.isProper());
     }
-     @Test
-    void testIsProperTrue(){
+
+    @Test
+    void testIsProperTrue() {
         fraction.setNumerator(0);
         assertTrue(fraction.isProper());
     }
@@ -63,7 +64,7 @@ class FractionTest {
     }
 
     @Test
-    void testIsImproperFalse(){
+    void testIsImproperFalse() {
         fraction.setNumerator(0);
         assertFalse(fraction.isImproper());
     }
@@ -81,23 +82,23 @@ class FractionTest {
     }
 
     @Test
-    void testAdd(){
+    void testAdd() {
         Fraction f = new Fraction(1, 3);
         assertEquals(new Fraction(7, 3),
                 fraction.add(f));
     }
 
     @Test
-    void testMultiply(){
+    void testMultiply() {
         Fraction f = new Fraction(1, 3);
-        assertEquals(new Fraction(2,3),
+        assertEquals(new Fraction(2, 3),
                 fraction.multiply(f));
     }
 
     @Test
-    void testDivide(){
-        Fraction f = new Fraction(3,1);
-        assertEquals(new Fraction(2,3),
+    void testDivide() {
+        Fraction f = new Fraction(3, 1);
+        assertEquals(new Fraction(2, 3),
                 fraction.divide(f));
     }
 }
