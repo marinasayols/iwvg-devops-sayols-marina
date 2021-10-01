@@ -3,10 +3,10 @@ package es.upm.miw.iwvg_devops.code;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class UserTest {
 
@@ -55,10 +55,10 @@ class UserTest {
     }
 
     @Test
-    void testGetFractions(){
+    void testGetFractions() {
         assertEquals(
                 List.of(
-                        new Fraction(0,1),
+                        new Fraction(0, 1),
                         new Fraction(2, 1)
                 ),
                 user.getFractions()
@@ -66,34 +66,34 @@ class UserTest {
     }
 
     @Test
-    void testSetFractions(){
-        user.setFractions(List.of(new Fraction(1,1)));
+    void testSetFractions() {
+        user.setFractions(List.of(new Fraction(1, 1)));
         assertEquals(
-                List.of(new Fraction(1,1)),
+                List.of(new Fraction(1, 1)),
                 user.getFractions()
         );
     }
 
     @Test
-    void testAddFraction(){
-        user.addFraction(new Fraction(0,0));
+    void testAddFraction() {
+        user.addFraction(new Fraction(0, 0));
         assertEquals(
                 List.of(
-                        new Fraction(0,1),
+                        new Fraction(0, 1),
                         new Fraction(2, 1),
-                        new Fraction(0,0)
+                        new Fraction(0, 0)
                 ),
                 user.getFractions()
         );
     }
 
     @Test
-    void testFullName(){
+    void testFullName() {
         assertEquals("Jane Doe", user.fullName());
     }
 
     @Test
-    void testInitials(){
+    void testInitials() {
         assertEquals("J.", user.initials());
     }
 }
