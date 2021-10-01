@@ -22,8 +22,7 @@ public class Searches {
         return new UsersDatabase().findAll()
                 .filter(user -> user.getFractions().stream()
                         .anyMatch(Fraction::isNegative))
-                .map(User::getFamilyName)
-                .distinct();
+                .map(User::getFamilyName).distinct();
     }
 
     public Stream<String> findUserFamilyNameInitialBySomeProperFraction() {
