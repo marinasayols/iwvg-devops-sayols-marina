@@ -65,7 +65,7 @@ public class User {
         return this.name.charAt(0) + ".";
     }
 
-    public String familyNameInitial(){
+    public String familyNameInitial() {
         return this.familyName.charAt(0) + "";
     }
 
